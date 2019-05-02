@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+        <item name="colorButtonNormal">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/textColorPrimary</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="theme">@style/AppTheme.AppBarOverlay</item>
+        <item name="popupTheme">@style/AppTheme.PopupOverlay</item>
+        <item name="android:windowEnterAnimation">@anim/no_anim</item>
+        <item name="android:windowExitAnimation">@anim/no_anim</item>
+        <item name="android:windowAnimationStyle">@style/AppAnimation.Activity</item>
+    </style>
+
+    <style name="AppTheme.Splash" parent="@style/AppTheme">
+        <item name="android:windowBackground">@drawable/img_splash</item>
+    </style>
+
+</resources>

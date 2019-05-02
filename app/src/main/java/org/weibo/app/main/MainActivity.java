@@ -1,10 +1,11 @@
-package org.weibo;
-
-import androidx.appcompat.app.AppCompatActivity;
+package org.weibo.app.main;
 
 import android.os.Bundle;
 
-public class MainActivity extends AppCompatActivity {
+import org.weibo.R;
+import org.weibo.app.BaseActivity;
+
+public class MainActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

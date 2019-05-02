@@ -29,24 +29,39 @@ android {
     }
 
     sourceSets {
+
+        main {
+            res.srcDirs = ['src/main/base', 'src/main/res']
+            jniLibs.srcDirs = ['libs']
+            java.srcDirs = ['src/main/java']
+        }
+
         beta {
-            res.srcDirs = ['src/beta/']
+            res.srcDirs = ['src/beta/res']
             jniLibs.srcDirs = ['libs']
             java.srcDirs = ['src/beta/java']
         }
 
         debug {
-            res.srcDirs = ['src/debug/']
+            res.srcDirs = ['src/debug/res']
             jniLibs.srcDirs = ['libs']
             java.srcDirs = ['src/debug/java']
         }
     }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+        incremental true
+    }
+    buildToolsVersion = '28.0.3'
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'androidx.appcompat:appcompat:1.0.2'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'com.google.android.material:material:1.0.0'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
